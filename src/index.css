@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +11,57 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.Post {
+  width: 100%;
+  height: auto;
+}
+.Post{
+margin: 6%;
+transition: all 0.4s cubic-bezier(0.175,0.885,0,1);
+background-color: #fff;
+width: 21.25%;
+border-radius: 12px;
+box-shadow: 0px 13px 10px -7px rgba(0,0 ,0 ,0.1);
+float: left;
+}
+.Post:hover{
+  box-shadow: 0px 30 px 18px -8px rgba(0, 0,0,0.1);
+  transform: scale(1.05,1.05);
+}
+.Post_img{
+  width: 100%;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.Post_info{
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+  background-color: #fff;
+}
+.Post_category{
+  font-family: "Raleway" , sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868688;
+  background-color: #fff;
+}
+.Post_title{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: "Raleway" ,sans-serif;
+  background-color: #fff;
+  text-transform: capitalize;
+}
+@media (max-width: 768px){
+  .Post{
+    float: none;
+    margin: 5%;
+    width: 90%;
+  }
 }
